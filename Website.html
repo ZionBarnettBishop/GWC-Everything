@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: Pink;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    background-color: #111;
+    background-position: center;
+}
+
+p{
+  color:white;}
+
+  #text{color:white;}
+  h3{
+      border: 2px solid white;
+      margin: auto;
+      background-color: Pink;
+      background-position: center;
+  }
+  .mySlides{
+    width:340px;
+    height:400px;
+  }
+  .pink{
+    width: 700px;
+    padding-left: 350px;
+  }
+  body {
+    background-image: url("7ef0253deaa98bb294ca21e18adcd55d.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%
+  }
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="file:///Users/girlswhocode/Desktop/Sample%20Website.html">Extra Curricular Activities</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="map.html">About</a></li>
+</ul>
+
+
+<h1 style="color:White"><center>Zion Barnett-Bishop<center></h1>
+
+<div class="pink">
+<h3 style="color:White"><h3>
+  <div class="w3-content w3-section">
+    <center><img class="mySlides" src="tenor.gif" ></center>
+    <center><img class="mySlides" src="IMG_0505 2.jpg"></center>
+    <center><img class="mySlides" src="download-2.jpg"></center>
+    <center><img class="mySlides" src="download.png"></center>
+  </div>
+
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000);
+  }
+  </script>
+</div>
+
+<p id="demo">Welcome to my page!</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "YAY!"'>Click Me!</button>
+
+
+<h2 style="color:White"><center> About Me!</center></h2>
+<h5 style="color:White"><center> I am 17 years old and I currently attend Kenwood Academy High School.
+   I pride myself on being apart of many clubs and activites to add to my life experience and resume.
+   I am originally from Chicago's south side, but at age 8, I moved to Vernon Hills, Il.
+   Vernon Hills is a predominantely white town where I had to redefine my identity in an unfamiliar space.
+    This experience helped to develop my character and outlook on life.
+    My Sophomore year I transferred to Kenwood Academy in Hyde Park.
+    Being surrounded by students that looked liked me and had similiar experiences gave me the
+    confidence to be the best version of myself. After switching schools I began to excel academically
+    and I dedicated myself to even more clubs and activities.</center></h5>
+
+</body>
+</html>
